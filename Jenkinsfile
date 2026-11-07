@@ -45,18 +45,7 @@ pipeline{
                 }  
             }
 
-            post{
-        always{
-            echo "======== Build Completed ========"
-        }
-        failure{
-            echo "======== Build Failed - Check Jenkins Logs ========"
-        }
-        always{
-            cleanWs()
-        }
-
-    } 
+            
     }
    
 }
