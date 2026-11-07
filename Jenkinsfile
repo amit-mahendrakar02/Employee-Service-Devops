@@ -45,9 +45,7 @@ pipeline{
                 }  
             }
 
-            
-    }
-    post{
+            post{
         always{
             echo "======== Build Completed ========"
         }
@@ -58,5 +56,7 @@ pipeline{
             cleanWs()
         }
 
+    } 
     }
+   
 }
