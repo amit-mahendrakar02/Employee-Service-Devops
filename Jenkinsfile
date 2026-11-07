@@ -1,7 +1,7 @@
 pipeline{
     agent any
     
-    # Define pipeline options
+    
     options{
         timestamps()
         disableConcurrentBuilds()
@@ -9,12 +9,12 @@ pipeline{
         buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '5'))  
     }
 
-    # Define environment variables
+
     environment{
         APP_NAME = "employee-service"
     }
 
-    # Define pipeline stages
+    
     stages{
         stage("Checkout"){
             steps{
