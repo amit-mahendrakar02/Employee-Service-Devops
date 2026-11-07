@@ -1,0 +1,14 @@
+.git
+.github
+.idea
+.vscode
+
+target
+*.log
+
+.env
+.env.*
+
+.mvn/wrapper/maven-wrapper.jar
+
+REDME.md
