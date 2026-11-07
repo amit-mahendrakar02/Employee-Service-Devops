@@ -27,8 +27,8 @@ pipeline{
                 steps{
                    sh '''
                         echo "======== Environment Check ========"
-                        java -version
-                        mvn -version
+                        java --version
+                        mvn --version
                    '''
                 }
             }
