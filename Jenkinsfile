@@ -21,6 +21,7 @@ pipeline{
                 echo "======== Checkout Source Code ========"
                 checkout scm
             }
+        }
             
             stage("Environment Check"){
                 steps{
@@ -45,7 +46,6 @@ pipeline{
             }
 
             
-        }
     }
     post{
         always{
